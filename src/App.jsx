@@ -1,7 +1,7 @@
 import React from 'react'
 import {Switch,Route,Redirect} from 'react-router-dom'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import Nav from './Nav'
+import Nav1 from './Nav'
 import Home from './Home'
 import About from './About'
 import Service from './Service'
@@ -19,15 +19,12 @@ const Desktop=({children})=>{
   const isDesktop=useMediaQuery({minWidth:992})
    return isDesktop?children:null
 }
-const Tablet=({children})=>{
-  const isTablet=useMediaQuery({minWidth:767,maxWidth:1023})
-   return isTablet?children:null
-}
+
   return (
    
       <>
     <header>
-     <Nav/>
+     <Nav1/>
      
      <Switch>
        
@@ -52,11 +49,7 @@ const Tablet=({children})=>{
        
         </div>
         </Mobile>
-        <Tablet>
-        <div className='Tablet' style={{backgroundColor:'yellow'}}>
-        <Footer/>
-        </div>
-        </Tablet>    
+          
     </>
     
   );

@@ -11,9 +11,6 @@ const Form=()=>{
         document.getElementById('s3').style.display='none'
       }
       
-      
-     
-     
     return(
         <>
         <article id='s2'>

@@ -3,7 +3,7 @@
     margin-left:10px;
     margin-top:5px;
     color:rgb(29, 63, 29);
-    
+    font-family: 'Rubik', sans-serif;
 }
 
 figure{
@@ -12,11 +12,22 @@ figure{
 }
 #user{
     font-size:18px;
+    font-family: 'Rubik', sans-serif;
     color:white;
     background-color:rgb(29, 71, 29);
     padding:9px;
     margin-top:10px;
    
+    
+}
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    background-color:black;
+    border-radius: 50%;
+  padding:13px;
+}
+.carousel-indicators li{
+    background-color:black;
+   margin-top: 10px;
     
 }
 #box,#s3{font-size:14px;
@@ -29,16 +40,17 @@ height:490px;
 float:left;
 margin-right:10px;
 margin-left:30px;
-
+font-family: 'Rubik',sans-serif;
 float:left;
 }
 
 #s3{
   margin-top:10px;
     height:300px; 
-   
+    font-family:'Rubik',sans-serif;
 }
 p{
+    font-family: 'Rubik', sans-serif;
     margin-bottom: 1px;
 }
 input[type=text],
@@ -166,10 +178,14 @@ display:'flex';
     color:black;
     font-weight: 500;
     justify-content: space-around;
-    background-color: #f3f8ed;
+    
     margin-top: 50px;
-    height: 680px;
+    height: auto;
+    width:100%;
+    justify-content: center;
     animation: fade 5s;
+    position: relative;
+    margin-top: 100px;
 }
 .section1,.section2{
     display:flex;
@@ -179,6 +195,7 @@ display:'flex';
 .article1,.article2{
     margin-top:10px;
    display: none;
+   margin-right: 10px;
 
 
 }
@@ -192,7 +209,7 @@ display:'flex';
  background-color: rgb(36, 136, 36);  
  border-radius: 100%;
  width:50px;
- margin-left: 20px;
+margin-left: 10px;
  outline:none;
  cursor: pointer;
  
@@ -272,11 +289,14 @@ display:'flex';
 
 @media(max-width:766px){
     .article1,.article2{display: block;}
-    
+    .fade-side{
+        height:700px;
+    }
     .s4{
         font-size:15px;
-        height:600px;
+        height:auto;
         display: flex;
+        width:auto;
         flex-direction: row;
     }
    
@@ -294,15 +314,20 @@ display:'flex';
         margin-top:10px;
     }
     .s4>.course{
-        margin-left: 30px;
-        margin-top: 100px;
+        margin-left: 5px;
+        margin-top: 60px;
     }
     .s4>.course>h1{
-        font-size:25px;
+        font-size:19px;
     }
     .s4>.course>h3{
-        font-size:20px;
+        font-size:17px;
     }
+    .s4>.course>p{
+        font-size:15px;
+        margin-top:10px;
+    }
+    
 }
 @media(max-width:766px){
 .fade-side>article{
@@ -310,14 +335,13 @@ display:'flex';
    margin-right: 30px;
   
 }
+
 .fade-side{
-    animation: gud;
+  
+    background-color: white;
+    margin-top: 2px;
 }
-@keyframes gud{
-    0%{
-        transform: none;
-    }
-}
+
         #python,#react,#javascript,#java,#c,#sql{
             display:none;
         }
@@ -333,6 +357,21 @@ display:'flex';
     }
 }
    }
-
-
-
+   @media(min-width:767px) and (max-width:1024px){
+          .fade-side{
+             display: inline-flex;
+              background-color: #f4f7f0;
+              height: auto;
+              margin: auto;
+             
+          }
+          .fade-side>section>div{
+              width:350px;
+             margin-top: 1px;
+             margin-top: 40px;
+          }
+          .fade-side>section>div>img{
+              width:345px;
+          }
+          
+   }

@@ -22,7 +22,7 @@ const Home1=()=>{
         return isMobile?children:null
       }
       const div4={
-        color:'white',backgroundColor: 'rgb(32, 102, 32)',fontSize:'80px',padding:'20px',borderRadius: '50%'
+        color:'white',backgroundColor: 'rgb(32, 102, 32)',fontSize:'60px',padding:'20px',borderRadius: '50%'
       ,marginBottom: '15px'
       };
     return(
@@ -68,20 +68,20 @@ const Home1=()=>{
             </Desktop>
             
             <Mobile>
-<div style={{marginTop:'100px'}}>
+<div>
   <center>
   <h3><b>#HowToLearnCode</b></h3>
    <h4><b>Simple Learning Strategy</b></h4>
    </center>
   </div>
-<Carousel style={{backgroundColor:'black', height:'430px',display:'flex'}}>
+<Carousel style={{backgroundColor:'white', height:'430px',display:'flex'}}>
   
 <Carousel.Item>
   <center>
-    <p style={{color:'black'}}>jdd</p>
+    <p style={{color:'white'}}>jdd</p>
   <i className="fa fa-code" style={div4}></i></center>
-<div style={{color:'black',height:'260px'}}>jdkdj</div>
-    <Carousel.Caption>
+<div style={{color:'white',height:'270px'}}>jdkdj</div>
+    <Carousel.Caption style={{color:'black'}}>
      
       <h3>Write & Execute Your Code</h3>
       <p>Just watching video is not enought for your programming skills. Now write that every 
@@ -91,10 +91,10 @@ const Home1=()=>{
   </Carousel.Item>
 
   <Carousel.Item>
-  <p style={{color:'black'}}>jdd</p>
+  <p style={{color:'white'}}>jdd</p>
   <center><i className="fa fa-video-camera" style={div4}></i></center>
-  <div style={{color:'black',height:'250px'}}>jdkdj</div>
-    <Carousel.Caption>
+  <div style={{color:'white',height:'270px'}}>jdkdj</div>
+    <Carousel.Caption style={{color:'black'}}>
     <h3>Watch Video Carefullly</h3>
       <p>The first step to watch video carefully without forward or skip 
                     any seconds. Every second with watching the video is very 
@@ -102,10 +102,10 @@ const Home1=()=>{
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-  <p style={{color:'black'}}>jdd</p>
+  <p style={{color:'white'}}>jdd</p>
   <center> <i className="fa fa-trophy" style={div4} ></i></center>
-  <div style={{color:'black',height:'250px'}}>jdkdj</div>
-    <Carousel.Caption>
+  <div style={{color:'white',height:'230px'}}>jdkdj</div>
+    <Carousel.Caption style={{color:'black'}}>
     <h3>Now develop that stuff</h3>
                 <p>Just learning the syntax is not enough. Important step is to 
                     Take some time and develop something and Don't worry about 

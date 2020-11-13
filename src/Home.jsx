@@ -10,6 +10,8 @@ import java from './java.jpeg'
 import c from './c.jpg'
 import Form from './Form.jsx'
 import Home1 from './Home1'
+import {Fade} from "react-reveal";
+
 import {useMediaQuery} from 'react-responsive'
 import './Home.css'
 import Carousel from 'react-bootstrap/Carousel'
@@ -158,6 +160,7 @@ function pluss(){
     return(
       <>
  <Desktop>   
+   
 <main className='s4'> 
      <div id='form' style={{display:'none',marginTop:'70px'}} >
        <Form/>
@@ -187,7 +190,7 @@ function pluss(){
 <div className='course' style={{animation:'animate 1s'}}>
   <h1>TutorialsWebsite Courses</h1>
   <h3>Your Bright Future is Our Mission</h3>
-  <p style={{marginTop:'20px'}}>India's best plateform to learn programming with high 
+  <p>India's best plateform to learn programming with high 
     quality videos from the comforts of your
      drawing rooms at your own place.</p>
     
@@ -205,7 +208,9 @@ function pluss(){
 </Mobile>
 
 <Desktop>
+
 <section className='homepage1'>
+<Fade left duration={1500} distance='35px'>
   <div style={{textAlign:'center',marginRight:'120px',marginTop:'40px',marginBottom:'50px'}}>
   <h4>#OnlineLearning</h4>
    <h4>Our Features</h4>
@@ -230,7 +235,9 @@ variety of fresh and popular topics.</p>
         learn from our course library</p>
     </div>
   </article> 
+  </Fade>
 </section>
+
 </Desktop>
 <br></br>
 <Mobile>
@@ -240,14 +247,15 @@ variety of fresh and popular topics.</p>
    <h4><b>Our Features</b></h4>
    </center>
   </div>
-<Carousel style={{backgroundColor:'black', height:'350px',display:'flex'}}>
+  
+<Carousel style={{backgroundColor:'white',height:'auto'}}>
   
 <Carousel.Item>
   <center>
-  <p style={{color:'black'}}>jdd</p>
+  <p style={{color:'white'}}>jdd</p>
 <i className="fa fa-graduation-cap" style={div4}></i></center>
-<div style={{color:'black',height:'150px'}}>jdkdj</div>
-    <Carousel.Caption>
+<div style={{color:'white',height:'150px'}}>jdkdj</div>
+    <Carousel.Caption style={{color:'black'}}>
      
       <h3>Multi-Tier Courses</h3>
       <p>Explore your coding skills with our 
@@ -256,20 +264,20 @@ variety of fresh and popular topics.</p>
   </Carousel.Item>
 
   <Carousel.Item>
-  <p style={{color:'black'}}>jdd</p>
+  <p style={{color:'white'}}>jdd</p>
   <center><i className="fa fa-clock-o" style={div4}></i></center>
-  <div style={{color:'black',height:'150px'}}>jdkdj</div>
-    <Carousel.Caption>
+  <div style={{color:'white',height:'150px'}}>jdkdj</div>
+    <Carousel.Caption style={{color:'black'}}>
       <h3>Lifetime access</h3>
       <p>Schedule your own time to 
         learn from our course library</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-  <p style={{color:'black'}}>jdd</p>
+  <p style={{color:'white'}}>jdd</p>
   <center> <i className="fa fa-shopping-cart" style={div4}></i></center>
-  <div style={{color:'black',height:'170px'}}>jdkdj</div>
-    <Carousel.Caption>
+  <div style={{color:'white',height:'150px'}}>jdkdj</div>
+    <Carousel.Caption style={{color:'black'}}>
       <h3>100% Free for Everyone</h3>
       <p>Choose what you'd like to learn 
         from our library free of cost.</p>
@@ -278,7 +286,9 @@ variety of fresh and popular topics.</p>
 </Carousel>
 </Mobile>
 <br></br>
-<div className='fade-side'>
+
+<div className='fade-side' style={{marginTop:'30px'}}>
+<Fade right duration={2000} distance='80px'>
 <section className='section1'>
     <div id='node'>
       <img src={node} alt="Node"/><br/>
@@ -324,12 +334,14 @@ variety of fresh and popular topics.</p>
   <button>Free</button>
   </div>
 </section>
+<center>
 <article className='article1'>
   <button onClick={btn1}>1</button>
   <button onClick={btn2}>2</button>
   <button onClick={btn3}>3</button>
-  <button onClick={btn4}>3</button>
+  <button onClick={btn4}>4</button>
 </article>
+</center>
   <section className='section2'>
     <div id='graph'>
     <img src={graph} alt="graph"/>
@@ -377,19 +389,23 @@ variety of fresh and popular topics.</p>
        <button>Free</button>
    </div>
   </section>
+  <center>
   <article className='article2'>
   <button onClick={btn11}>1</button>
   <button onClick={btn22}>2</button>
   <button onClick={btn33}>3</button>
-  <button onClick={btn44}>3</button>
+  <button onClick={btn44}>4</button>
 </article>
+</center>
+</Fade>
 </div>
 
-
+<Fade left duration={2000} distance='40px'>
 <section>
   <Home1/>
 </section>
-
+</Fade>
+<Fade bottom duration={2000} distance='30px'>
 <section style={{width:'50%',marginLeft:'25%',marginTop:'50px'}}>
   <div style={{borderBottom:'1px solid black'}}><span style={{display:'flex',justifyContent:'space-between'}}><h5>How can I reach you?</h5><i className='fa fa-plus-circle' id='on' onClick={plus}></i></span>
   <p id='plus1' style={{display:'none'}}>If you are reaching out for a technical problem related to course, 
@@ -415,6 +431,7 @@ I don't answer those questions which answers
 is already in my video. But due to video forward you missed the point.</p>
   </div>
 </section>
+</Fade>
 
 
      </>

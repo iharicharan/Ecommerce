@@ -21,6 +21,7 @@ function About(){
     const isDesktop=useMediaQuery({minWidth:922})
     return isDesktop?children:null
   }
+  
     const flex={
 display:'flex',
 flexWrap:'wrap',
@@ -81,7 +82,7 @@ justifyContent:'space-around',
         <>
         
         
-     <main style={flex}>
+     <main style={flex} className='main'>
             
      <div id='form' style={{display:'none',marginTop:'140px'}}>
                 <Form/>
@@ -133,12 +134,14 @@ justifyContent:'space-around',
   <button>Free</button>
   </div>
 </section>
+<center>
 <article className='article1'>
   <button onClick={btn1}>1</button>
   <button onClick={btn2}>2</button>
   <button onClick={btn3}>3</button>
-  <button onClick={btn4}>3</button>
+  <button onClick={btn4}>4</button>
 </article>
+</center>
   <section className='section2'>
     <div id='graph'>
     <img src={graph} alt="graph"/>
@@ -186,12 +189,14 @@ justifyContent:'space-around',
        <button>Free</button>
    </div>
   </section>
+  <center>
   <article className='article2'>
   <button onClick={btn11}>1</button>
   <button onClick={btn22}>2</button>
   <button onClick={btn33}>3</button>
-  <button onClick={btn44}>3</button>
+  <button onClick={btn44}>4</button>
 </article>
+</center>
 <Desktop>
  <section className='section2'>
     <div id='vue'>
@@ -241,6 +246,7 @@ justifyContent:'space-around',
    </div>
   </section>
   </Desktop>
+  
   
 </div>
 </main>
